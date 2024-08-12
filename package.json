@@ -1,11 +1,16 @@
 {
-  "name": "stripe",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+	"name": "stripe",
+	"module": "index.ts",
+	"scripts": {
+		"apply": "bunx @biomejs/biome check --write ./",
+		"check": "bunx @biomejs/biome check ./"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
 }
